@@ -3,6 +3,7 @@ import Navbar from './components/navbar';
 import SocialLinks from './components/socialLinks';
 import About from './components/about';
 import Burger from './components/burger';
+import Skills from './components/skills';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Burger />
       <SocialLinks />
       <About />
+      <Skills />
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useState } from "react";
 
 
@@ -8,6 +9,16 @@ function Burger() {
     function clicker() {
         setIcon(prev => !prev);
     }
+
+    useEffect(() => {
+        if (!icon) {
+            document.querySelector('body').classList.add('noScroll');
+            document.querySelector('html').style.overflow = 'hidden';
+        } else {
+            document.querySelector('body').classList.remove('noScroll');
+            document.querySelector('html').style.overflow = 'unset';
+        }
+    }, [icon])
 
 
     return (
