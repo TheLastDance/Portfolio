@@ -8,10 +8,10 @@ function About() {
     return (
         <div id="About" className="about">
             <div className="about_2">
-                <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={window.screen.width > 1200 ? aboutLeft : aboutLeftY} className="photoDiv">
+                <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={window.innerWidth > 1200 ? aboutLeft : aboutLeftY} className="photoDiv">
                     <p>{lorem.replace(/\s|\?/gi, "")}</p>
                 </motion.div>
-                <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={window.screen.width > 1200 ? aboutRight : aboutRightY} className="about_text">
+                <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={window.innerWidth > 1200 ? aboutRight : aboutRightY} className="about_text">
                     <div className="autotyping">
                         <h2>Hello, I am <span>David</span></h2>
                         <Typed

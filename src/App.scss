@@ -3,7 +3,7 @@
 $bodyColor: rgb(24, 23, 23);
 $whiteColor: #e4e7e6;
 $orangeColor: #dd8109;
-$contentWidth: 1000px;
+$contentWidth: 1000px; // was 1000
 $navbarHeight: 60px;
 
 ::after {
@@ -17,6 +17,7 @@ html {
 body {
   background: $bodyColor;
 }
+
 
 //navbar active on scroll
 .navbar.active {
@@ -75,6 +76,102 @@ body {
     }
   }
 }
+
+.burger {
+  display: none;
+
+  .burger_icon {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 2;
+
+    svg {
+      width: 40px;
+      height: 40px;
+      fill: $orangeColor;
+    }
+  }
+
+  .burger_menu {
+    display: flex;
+    position: fixed;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    transition: 0.3s;
+    top: 0;
+    z-index: 1;
+    background-color: $orangeColor;
+
+    .burger_navbar {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: start;
+
+
+      ul {
+        list-style: none;
+
+        li {
+          padding: 8px;
+
+          a {
+            color: $whiteColor;
+            text-decoration: none;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    .burger_social_links {
+      margin-left: auto;
+      margin-right: auto;
+      z-index: 2;
+      color: $whiteColor;
+      width: fit-content;
+
+      &_ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+
+        li {
+          display: list-item;
+
+          a {
+            display: inline-block;
+            text-decoration: none;
+            text-decoration-skip-ink: auto;
+            color: inherit;
+            position: relative;
+
+
+            svg {
+              width: 30px;
+              height: 30px;
+              width: 100%;
+              max-width: 100%;
+              vertical-align: middle;
+            }
+
+            svg.feather {
+              fill: none;
+            }
+
+          }
+        }
+      }
+    }
+  }
+}
+
 
 // social links left side bar
 .social_links {
@@ -152,10 +249,11 @@ body {
     margin: 190px 0;
     display: flex;
     align-items: center;
+    width: 100%;
 
     .photoDiv {
       width: 50%;
-      height: 500px;
+      height: $contentWidth/2;
       overflow: hidden;
       border-radius: 10%;
 
@@ -206,6 +304,99 @@ body {
 
       .my_story {
         color: $whiteColor;
+      }
+    }
+  }
+}
+
+@media (max-width:1000px) {
+  .navbar {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .social_links {
+    display: none;
+  }
+
+  .about {
+    width: $contentWidth/2;
+    height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0;
+
+    &_2 {
+      margin: 100px 0;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      .photoDiv {
+        width: 80%;
+        height: $contentWidth/2.5;
+        border-radius: 50%;
+
+        p {
+          font-size: 14px;
+          line-height: 7px;
+          letter-spacing: 1px;
+        }
+
+      }
+
+      .about_text {
+        flex-direction: column;
+        width: 80%;
+        margin-left: 0;
+        margin-top: $navbarHeight;
+      }
+    }
+  }
+}
+
+@media (max-width:500px) {
+  .about {
+    width: 350px;
+
+    &_2 {
+      width: 100%;
+      padding: 0 5px;
+
+      .photoDiv {
+        width: 100%;
+        height: $contentWidth/2.85;
+        border-radius: 50%;
+
+        p {
+          font-size: 12px;
+          line-height: 8px;
+          letter-spacing: 1px;
+        }
+
+      }
+
+      .about_text {
+        flex-direction: column;
+        width: 100%;
+        margin-left: 0;
+        margin-top: $navbarHeight/1.5;
+
+        .autotyping {
+          font-size: 1.6rem;
+          height: fit-content;
+
+          h2 {
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      .my_story {
+        font-size: 0.8rem;
       }
     }
   }
