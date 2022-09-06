@@ -30,7 +30,8 @@ body {
 body.noScroll {
     height: 100%;
     overflow: hidden;
-    width: 100%
+    width: 100%;
+    position: relative;
 }
 
 .navbar.active {
