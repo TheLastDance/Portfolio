@@ -1,0 +1,212 @@
+@import 'resets';
+
+$bodyColor: rgb(24, 23, 23);
+$whiteColor: #e4e7e6;
+$orangeColor: #dd8109;
+$contentWidth: 1000px;
+$navbarHeight: 60px;
+
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: $bodyColor;
+}
+
+//navbar active on scroll
+.navbar.active {
+  background-color: $orangeColor;
+  transition: 0.7s;
+  z-index: 2;
+
+  a {
+    color: $whiteColor;
+    border-bottom: 2px solid $orangeColor;
+    transition: 0.7s;
+
+    &:hover {
+      border-bottom: 2px solid $whiteColor;
+      transition: 0.7s;
+    }
+  }
+}
+
+//navbar 
+.navbar {
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 700;
+  position: fixed;
+  transition: 0.7s;
+
+  &_2 {
+    width: $contentWidth;
+    height: $navbarHeight;
+    margin: 0 auto;
+
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+
+      li {
+        vertical-align: center;
+        line-height: $navbarHeight;
+        margin: 0 20px;
+
+        a {
+          text-decoration: none;
+          color: $orangeColor;
+          padding-bottom: 3px;
+          border-bottom: 2px solid $bodyColor;
+          transition: 0.7s;
+
+          &:hover {
+            border-bottom: 2px solid $orangeColor;
+            transition: 0.7s;
+          }
+        }
+      }
+    }
+  }
+}
+
+// social links left side bar
+.social_links {
+  width: 70px;
+  position: fixed;
+  bottom: 0px;
+  left: 20px;
+  right: auto;
+  z-index: 10;
+  color: $orangeColor;
+
+  &_ul {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+
+    li {
+      display: list-item;
+
+      a {
+        display: inline-block;
+        text-decoration: none;
+        text-decoration-skip-ink: auto;
+        color: inherit;
+        position: relative;
+        padding: 10px;
+        transition: 0.4s;
+        bottom: 0px;
+
+        &:hover {
+          bottom: 4px;
+          color: $whiteColor;
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+          width: 100%;
+          max-width: 100%;
+          vertical-align: middle;
+        }
+
+        svg.feather {
+          fill: none;
+        }
+
+      }
+    }
+  }
+
+  &_ul::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: $orangeColor;
+  }
+}
+
+.about {
+  width: $contentWidth;
+  height: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: $navbarHeight;
+
+  &_2 {
+    margin: 190px 0;
+    display: flex;
+    align-items: center;
+
+    .photoDiv {
+      width: 50%;
+      height: 500px;
+      overflow: hidden;
+      border-radius: 10%;
+
+      p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 8px;
+        letter-spacing: 1px;
+        inline-size: 100%;
+        overflow-wrap: break-word;
+        background-image: url(portfolio_photo.jpg);
+        background-clip: text;
+        color: transparent;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+
+    }
+
+    .about_text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50%;
+      margin-left: 1rem;
+
+      .autotyping {
+        color: $orangeColor;
+        font-size: 2rem;
+        font-weight: 700;
+        height: 110px;
+        width: 100%;
+
+        h2 {
+          span {
+            color: $whiteColor;
+          }
+        }
+
+        span {
+          text-align: left;
+
+          span:nth-child(2) {
+            display: none;
+          }
+        }
+      }
+
+      .my_story {
+        color: $whiteColor;
+      }
+    }
+  }
+}
