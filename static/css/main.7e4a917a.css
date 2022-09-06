@@ -22,7 +22,6 @@ code {
 html {
     scroll-behavior: smooth;
     position: relative;
-    height: 100%;
 }
 
 body {
