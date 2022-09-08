@@ -1,4 +1,5 @@
-@import 'resets';
+@import 'resets', 'fonts';
+
 
 $bodyColor: rgb(24, 23, 23);
 $whiteColor: #e4e7e6;
@@ -30,17 +31,17 @@ body.noScroll {
 //navbar active on scroll
 .navbar.active {
   background-color: $orangeColor;
-  transition: 0.7s;
+  transition: 0.5s;
   z-index: 2;
 
   a {
     color: $whiteColor;
-    border-bottom: 2px solid $orangeColor;
-    transition: 0.7s;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
 
     &:hover {
       border-bottom: 2px solid $whiteColor;
-      transition: 0.7s;
+      transition: 0.5s;
     }
   }
 }
@@ -51,7 +52,9 @@ body.noScroll {
   font-size: 1.3rem;
   font-weight: 700;
   position: fixed;
-  transition: 0.7s;
+  transition: background-color 0.5s;
+  font-family: 'Russo One';
+  font-weight: 500;
 
   &_2 {
     width: $contentWidth;
@@ -72,12 +75,12 @@ body.noScroll {
           text-decoration: none;
           color: $orangeColor;
           padding-bottom: 3px;
-          border-bottom: 2px solid $bodyColor;
-          transition: 0.7s;
+          border-bottom: 2px solid transparent;
+          transition: 0.5s;
 
           &:hover {
             border-bottom: 2px solid $orangeColor;
-            transition: 0.7s;
+            transition: 0.5s;
           }
         }
       }
@@ -291,8 +294,11 @@ body.noScroll {
         font-weight: 700;
         height: 110px;
         width: 100%;
+        font-family: 'Anthony Hunter';
 
         h2 {
+          font-family: 'Minecrafter';
+
           span {
             color: $whiteColor;
           }
@@ -309,26 +315,31 @@ body.noScroll {
 
       .my_story {
         color: $whiteColor;
+        font-family: 'MADE TOMMY';
+
       }
     }
   }
 }
 
 
-
-img {
-  width: 70px;
-  height: 70px;
-  filter: grayscale(1);
-  position: relative;
-  left: 500px;
-
-}
-
 .skills {
   width: $contentWidth;
   margin-left: auto;
   margin-right: auto;
+
+  h1 {
+    font-family: 'Minecrafter'; //was HIRO MISAKi
+    color: $whiteColor;
+    //text-shadow: 1px 3px 10px $orangeColor;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    padding-top: 2.8rem;
+    letter-spacing: 0.2rem;
+    border-bottom: 2px solid $orangeColor;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
 
   &_2 {
     display: grid;
@@ -432,14 +443,16 @@ img {
   }
 
   .skills {
-    width: $contentWidth/2;
+    width: unset;
+    min-width: fit-content;
     margin-top: 100px;
 
 
     &_2 {
       display: grid;
-      grid-template-columns: repeat(3, 150px);
-      grid-template-rows: repeat(4, 150px);
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: none;
+      row-gap: 30px;
 
       .skills_svg {
         filter: unset;
@@ -500,30 +513,27 @@ img {
   }
 
   .skills {
-    width: 280px;
+
     margin-top: $navbarHeight;
 
 
     &_2 {
 
-      grid-template-columns: repeat(3, 80px);
-      grid-template-rows: repeat(4, 100px);
-
       div:nth-child(3) {
-        width: 60px;
-        height: 60px;
-        margin-top: 10px;
+        width: 55px;
+        height: 55px;
+        margin-top: 5px;
       }
 
       div:nth-child(9) {
-        height: 35px;
+        height: 30px;
       }
 
       .skills_svg {
         filter: unset;
         transition: unset;
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
 
         svg {
           width: 100%;

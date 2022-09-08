@@ -7,6 +7,7 @@ function Skills() {
 
     return (
         <div id="Skills" className="skills">
+            <h1>Skills</h1>
             <div className="skills_2">
                 {skillsData.map((item, index) => <motion.div custom={index + 1} initial='hidden' whileInView="visible" viewport={{ once: true }} variants={skillsOpacityAnimation} className="skills_svg" title={item.name} key={index}>{item.src}</motion.div>)}
             </div>
