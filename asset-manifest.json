@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c273208b.css",
+    "main.js": "/static/js/main.dd3d4f99.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/portfolio_photo.jpg": "/static/media/portfolio_photo.d762f74408fba6ec66ea.jpg",
+    "static/media/HIROMISAKERegular.eot": "/static/media/HIROMISAKERegular.be84438a93dabf183657.eot",
+    "static/media/HIROMISAKERegular.ttf": "/static/media/HIROMISAKERegular.0df9e2911e31544304b2.ttf",
+    "static/media/RussoOne.eot": "/static/media/RussoOne.22545ce04489264e7dcb.eot",
+    "static/media/RussoOne.ttf": "/static/media/RussoOne.64eebaedef5db50f056d.ttf",
+    "static/media/Anthony Hunter Italic.ttf": "/static/media/AnthonyHunterItalic.ac601c94936e372b705d.ttf",
+    "static/media/HIROMISAKERegular.woff": "/static/media/HIROMISAKERegular.e63ef1aebd48922dbb18.woff",
+    "static/media/HIROMISAKERegular.woff2": "/static/media/HIROMISAKERegular.6021dbd23089c925f7e4.woff2",
+    "static/media/Anthony Hunter Italic.woff": "/static/media/AnthonyHunterItalic.4f9137ec9f91d144fb15.woff",
+    "static/media/Anthony Hunter Italic.woff2": "/static/media/AnthonyHunterItalic.d73782210266614b683e.woff2",
+    "static/media/RussoOne.woff": "/static/media/RussoOne.0ceb07b5d754d9c49ee6.woff",
+    "static/media/ChicagoRegular.eot": "/static/media/ChicagoRegular.f67456c3ba172cbe7d33.eot",
+    "static/media/ChicagoRegular.ttf": "/static/media/ChicagoRegular.f6460bcb845213f9e334.ttf",
+    "static/media/MADETOMMY.eot": "/static/media/MADETOMMY.3e3853e88849d8c4738a.eot",
+    "static/media/MADETOMMY.ttf": "/static/media/MADETOMMY.6ac06c07f2e40e3754ac.ttf",
+    "static/media/RussoOne.woff2": "/static/media/RussoOne.67b3cd14a2410293d299.woff2",
+    "static/media/ChicagoRegular.woff": "/static/media/ChicagoRegular.8a7f2ca3b4f20d2056af.woff",
+    "static/media/ChicagoRegular.woff2": "/static/media/ChicagoRegular.dc7c0f9b0fb7c5d5a180.woff2",
+    "static/media/MADETOMMY.woff": "/static/media/MADETOMMY.433ca03b18e57d0988b6.woff",
+    "static/media/MADETOMMY.woff2": "/static/media/MADETOMMY.7eab6ee05fe243c203ca.woff2",
+    "static/media/Minecrafter.eot": "/static/media/Minecrafter.67f11d75881e3c6c7b7a.eot",
+    "static/media/Minecrafter.ttf": "/static/media/Minecrafter.3461e05c27f993edaa5d.ttf",
+    "static/media/Minecrafter.woff": "/static/media/Minecrafter.57d07a4f9b78f5c756c0.woff",
+    "static/media/Minecrafter.woff2": "/static/media/Minecrafter.76fa3bf11a25741b0b15.woff2",
+    "index.html": "/index.html",
+    "main.c273208b.css.map": "/static/css/main.c273208b.css.map",
+    "main.dd3d4f99.js.map": "/static/js/main.dd3d4f99.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c273208b.css",
+    "static/js/main.dd3d4f99.js"
+  ]
+}
