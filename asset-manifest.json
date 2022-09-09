@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b77c6325.css",
+    "main.js": "/static/js/main.0f9956d9.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/portfolio_photo.jpg": "/static/media/portfolio_photo.d762f74408fba6ec66ea.jpg",
+    "static/media/RussoOne.eot": "/static/media/RussoOne.22545ce04489264e7dcb.eot",
+    "static/media/RussoOne.ttf": "/static/media/RussoOne.64eebaedef5db50f056d.ttf",
+    "static/media/Blacksword.eot": "/static/media/Blacksword.5fa71a5db346c19b6eab.eot",
+    "static/media/Blacksword.ttf": "/static/media/Blacksword.e72d19ecdddbc58c030d.ttf",
+    "static/media/Blacksword.woff": "/static/media/Blacksword.cbefd3087ea65767b5b1.woff",
+    "static/media/RussoOne.woff": "/static/media/RussoOne.0ceb07b5d754d9c49ee6.woff",
+    "static/media/MADETOMMY.eot": "/static/media/MADETOMMY.3e3853e88849d8c4738a.eot",
+    "static/media/MADETOMMY.ttf": "/static/media/MADETOMMY.6ac06c07f2e40e3754ac.ttf",
+    "static/media/Blacksword.woff2": "/static/media/Blacksword.a35ffaa68f0a7b27ac40.woff2",
+    "static/media/RussoOne.woff2": "/static/media/RussoOne.67b3cd14a2410293d299.woff2",
+    "static/media/MADETOMMY.woff": "/static/media/MADETOMMY.433ca03b18e57d0988b6.woff",
+    "static/media/MADETOMMY.woff2": "/static/media/MADETOMMY.7eab6ee05fe243c203ca.woff2",
+    "static/media/Minecrafter.eot": "/static/media/Minecrafter.67f11d75881e3c6c7b7a.eot",
+    "static/media/Minecrafter.ttf": "/static/media/Minecrafter.3461e05c27f993edaa5d.ttf",
+    "static/media/Minecrafter.woff": "/static/media/Minecrafter.57d07a4f9b78f5c756c0.woff",
+    "static/media/Minecrafter.woff2": "/static/media/Minecrafter.76fa3bf11a25741b0b15.woff2",
+    "index.html": "/index.html",
+    "main.b77c6325.css.map": "/static/css/main.b77c6325.css.map",
+    "main.0f9956d9.js.map": "/static/js/main.0f9956d9.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b77c6325.css",
+    "static/js/main.0f9956d9.js"
+  ]
+}
