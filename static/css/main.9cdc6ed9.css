@@ -326,7 +326,7 @@ body.noScroll {
 .about_2 .photoDiv p {
     -webkit-background-clip: text;
     background-clip: text;
-    background-image: url(/static/media/portfolio_photo.d762f74408fba6ec66ea.jpg);
+    background-image: url(../media/portfolio_photo.d762f74408fba6ec66ea.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     color: transparent;
