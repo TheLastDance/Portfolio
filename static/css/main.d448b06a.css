@@ -568,6 +568,17 @@ body.noScroll {
     place-content: center
 }
 
+@media (max-width:640px) {
+  .gallery {
+    --s: 100px !important;
+    /* control the size */
+    --g: 10px !important;
+    /* control the gap */
+    display: grid;
+    margin: calc(var(--s) + var(--g));
+  }
+}
+
 @media (max-width:1015px) {
     ::-webkit-scrollbar {
         background: #181717
