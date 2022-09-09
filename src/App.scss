@@ -6,6 +6,16 @@ $whiteColor: #e4e7e6;
 $orangeColor: #dd8109;
 $contentWidth: 1000px; // was 1000
 $navbarHeight: 60px;
+$marginTop_between_sections: 240px;
+$marginTop_media_1015: 150px;
+$marginTop_media_515: 135px;
+$marginTop_media_350: 110px;
+
+@mixin font($family, $size, $color) {
+  font-family: $family;
+  font-size: $size;
+  color: $color;
+}
 
 ::after {
   box-sizing: inherit;
@@ -26,6 +36,17 @@ body.noScroll {
   position: relative;
 }
 
+//scrollbar
+::-webkit-scrollbar {
+  width: 8px;
+  background: black;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $orangeColor ;
+  border-radius: 5px;
+}
 
 
 //navbar active on scroll
@@ -49,12 +70,10 @@ body.noScroll {
 //navbar 
 .navbar {
   width: 100%;
-  font-size: 1.3rem;
-  font-weight: 700;
-  position: fixed;
-  transition: background-color 0.5s;
-  font-family: 'Russo One';
   font-weight: 500;
+  position: fixed;
+  transition: 0.5s;
+  @include font ('Russo One', 1.3rem, 'unset');
 
   &_2 {
     width: $contentWidth;
@@ -134,9 +153,9 @@ body.noScroll {
           padding: 8px;
 
           a {
-            color: $whiteColor;
             text-decoration: none;
-            font-size: 2rem;
+            font-weight: 500;
+            @include font ('Russo One', 2rem, $whiteColor);
           }
         }
       }
@@ -254,7 +273,7 @@ body.noScroll {
   padding-top: $navbarHeight;
 
   &_2 {
-    margin: 190px 0;
+    padding: 190px 0;
     display: flex;
     align-items: center;
     width: 100%;
@@ -275,6 +294,7 @@ body.noScroll {
         background-image: url(portfolio_photo.jpg);
         background-clip: text;
         color: transparent;
+        filter: brightness(1.2);
         background-repeat: no-repeat;
         background-size: contain;
       }
@@ -289,15 +309,17 @@ body.noScroll {
       margin-left: 1rem;
 
       .autotyping {
-        color: $orangeColor;
-        font-size: 2rem;
+        @include font ('Blacksword', 2rem, $orangeColor);
         font-weight: 700;
-        height: 110px;
+        min-height: 120px;
         width: 100%;
-        font-family: 'Anthony Hunter';
+
+        span {
+          margin-left: 2px;
+        }
 
         h2 {
-          font-family: 'Minecrafter';
+          @include font ('Minecrafter', 2.6rem, $orangeColor);
 
           span {
             color: $whiteColor;
@@ -314,9 +336,7 @@ body.noScroll {
       }
 
       .my_story {
-        color: $whiteColor;
-        font-family: 'MADE TOMMY';
-
+        @include font ('MADE TOMMY', 1rem, $whiteColor);
       }
     }
   }
@@ -327,19 +347,7 @@ body.noScroll {
   width: $contentWidth;
   margin-left: auto;
   margin-right: auto;
-
-  h1 {
-    font-family: 'Minecrafter'; //was HIRO MISAKi
-    color: $whiteColor;
-    //text-shadow: 1px 3px 10px $orangeColor;
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    padding-top: 2.8rem;
-    letter-spacing: 0.2rem;
-    border-bottom: 2px solid $orangeColor;
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+  margin-top: $marginTop_between_sections - 190;
 
   &_2 {
     display: grid;
@@ -394,7 +402,19 @@ body.noScroll {
 
 }
 
-@media (max-width:1000px) {
+.section_name {
+  @include font ('Minecrafter', 3rem, $whiteColor);
+  margin-bottom: 1rem;
+  letter-spacing: 0.2rem;
+  border-bottom: 2px solid $orangeColor;
+}
+
+@media (max-width:1015px) {
+  ::-webkit-scrollbar {
+    background: $bodyColor;
+  }
+
+
   .navbar {
     display: none;
   }
@@ -415,15 +435,16 @@ body.noScroll {
     padding-top: 0;
 
     &_2 {
-      margin: 100px 0;
       display: flex;
       flex-direction: column;
       width: 100%;
+      padding: 80px 0;
 
       .photoDiv {
         width: 80%;
         height: $contentWidth/2.5;
         border-radius: 50%;
+        border: 4px solid $whiteColor;
 
         p {
           font-size: 14px;
@@ -438,6 +459,9 @@ body.noScroll {
         width: 100%;
         margin-left: 0;
         margin-top: $navbarHeight;
+        border: 4px solid $whiteColor;
+        border-radius: 10px 0px 10px 0px;
+        padding: 5px;
       }
     }
   }
@@ -445,7 +469,7 @@ body.noScroll {
   .skills {
     width: unset;
     min-width: fit-content;
-    margin-top: 100px;
+    margin-top: $marginTop_media_1015 - 80;
 
 
     &_2 {
@@ -465,52 +489,55 @@ body.noScroll {
       }
     }
   }
+
+  .section_name {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
 }
 
-@media (max-width:500px) {
+@media (max-width:515px) {
   .about {
     width: 350px;
 
     &_2 {
       width: 100%;
-      margin: 75px 0;
-      padding: 0 5px;
+      padding: 75px 5px;
 
       .photoDiv {
         width: 100%;
         height: $contentWidth/3;
         border-radius: 50%;
-        border: 8px solid black;
 
         p {
-          font-size: 12px;
-          line-height: 8px;
-          letter-spacing: 1px;
+          font-size: 11px;
+          line-height: 6px;
+          letter-spacing: 0.8px;
+          inline-size: 102%;
         }
 
       }
 
       .about_text {
         flex-direction: column;
-        width: 100%;
-        margin-left: 0;
-        margin-top: $navbarHeight/1.5;
 
         .autotyping {
-          font-size: 1.6rem;
-          height: 85px;
+          font-size: 1.5rem;
+          min-height: 100px;
 
           h2 {
-            font-size: 1.2em;
+            font-size: 1.7rem;
           }
         }
-      }
 
-      .my_story {
-        font-size: 0.8rem;
+        .my_story {
+          font-size: 0.8rem;
+        }
       }
     }
   }
+
 
   .skills {
 
@@ -547,23 +574,26 @@ body.noScroll {
       }
     }
   }
+
+  .section_name {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 350px) {
   .about {
-    width: 270px;
+    width: 280px;
 
     &_2 {
-      padding: 0 5px;
+      padding: 50px 5px;
 
       .photoDiv {
         height: $contentWidth/3.8;
-        border: 6px solid black;
 
         p {
-          font-size: 10px;
-          line-height: 6px;
-          letter-spacing: 0.8px;
+          font-size: 9px;
+          line-height: 5px;
+          letter-spacing: 0.7px;
         }
 
       }
@@ -575,18 +605,45 @@ body.noScroll {
         margin-top: $navbarHeight/1.5;
 
         .autotyping {
-          font-size: 1.3rem;
-          height: 85px;
+          font-size: 1.2rem;
+          min-height: 70px;
+
+          span {
+            margin-left: 1px;
+          }
 
           h2 {
-            font-size: 1.3em;
+            font-size: 1.3rem;
           }
+        }
+
+        .my_story {
+          font-size: 0.7rem;
         }
       }
 
-      .my_story {
-        font-size: 0.8rem;
-      }
     }
   }
+
+  .section_name {
+    font-size: 2rem;
+  }
+}
+
+
+//height
+@media(max-height:350px) {
+  .burger .burger_menu .burger_navbar ul li {
+    padding: 3px;
+  }
+
+  .burger .burger_menu .burger_navbar ul li a {
+    font-size: 1.8rem;
+  }
+
+  .burger .burger_menu .burger_social_links {
+    margin-left: unset;
+    margin-right: unset;
+  }
+
 }
