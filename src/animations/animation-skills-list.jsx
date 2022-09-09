@@ -4,7 +4,7 @@ const skillsOpacityAnimation = {
     },
     visible: custom => ({
         opacity: 1,
-        transition: { ease: "easeOut", delay: 0.3 * custom },
+        transition: { ease: "easeOut", delay: 0.5 * custom },
     })
 }
 

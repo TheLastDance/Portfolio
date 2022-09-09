@@ -4,6 +4,7 @@ import SocialLinks from './components/socialLinks';
 import About from './components/about';
 import Burger from './components/burger';
 import Skills from './components/skills';
+import Projects from './components/projects';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SocialLinks />
       <About />
       <Skills />
+      <Projects />
     </div>
   );
 }
