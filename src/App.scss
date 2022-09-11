@@ -27,6 +27,7 @@ html {
 
 body {
   background: $bodyColor;
+  overflow-x: hidden;
 }
 
 body.noScroll {
@@ -39,7 +40,7 @@ body.noScroll {
 //scrollbar
 ::-webkit-scrollbar {
   width: 8px;
-  background: black;
+  background: black; //was black
   border-radius: 5px;
 }
 
@@ -415,11 +416,115 @@ body.noScroll {
   margin-inline: auto;
   margin-top: $marginTop_between_sections;
 
+  button {
+    @include font ('Russo One', 1.2rem, $orangeColor);
+    background: black;
+    cursor: pointer;
+    padding: 8px;
+    border: 2px solid $whiteColor;
+    position: relative;
+  }
+
+  button:hover {
+    border: 2px solid $orangeColor;
+    top: 2px;
+    left: 2px;
+    box-shadow: 1px 3px 5px $whiteColor;
+  }
+
+
+  .project_info {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    right: 0;
+    transition: 0.3s linear;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    background: $orangeColor;
+    padding: 5px 0;
+
+    .project_name {
+      padding-top: 5px;
+
+      a {
+        text-decoration: none;
+        @include font ('Minecrafter', 1.2rem, $whiteColor);
+      }
+    }
+
+    ul {
+      margin-left: auto;
+      margin-right: auto;
+      list-style: none;
+      display: flex;
+      width: fit-content;
+      padding: 5px 0;
+
+
+      li {
+        width: 40px;
+        height: 40px;
+        margin: 0 5px;
+
+        svg {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+    }
+
+    .project_date {
+      @include font ('Russo One', 1rem, $whiteColor);
+      padding-top: 5px;
+    }
+
+    .github_link {
+      padding-top: 5px;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+  #second-style {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 16px;
+    gap: 5px;
+    width: 100%;
+
+    .project_item_new {
+      overflow: hidden;
+      height: 250px;
+      background-position: center;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+
+      .project_info {
+        height: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: unset;
+        justify-content: center;
+      }
+    }
+
+    .hide {
+      right: -100%;
+    }
+  }
+
 
   .gallery {
-    --s: 300px;
+    --s: 320px;
     /* control the size */
-    --g: 20px;
+    --g: 40px;
     /* control the gap */
     display: grid;
     margin: calc(var(--s) + var(--g));
@@ -427,106 +532,77 @@ body.noScroll {
 
     .project_item {
       background-position: center !important;
-
       height: fit-content;
       display: flex;
       align-items: center;
       justify-content: center;
+      //position: relative;
 
-      .project_info {
-        text-align: center;
-
-        ul {
-          margin-left: auto;
-          margin-right: auto;
-          list-style: none;
-          display: flex;
-          width: fit-content;
-
-        }
+      .hide {
+        right: -105%;
       }
     }
   }
 
-  .gallery>a {
+  .gallery>div {
     grid-area: 1/1;
     width: var(--s);
     aspect-ratio: 1.15;
     object-fit: cover;
     clip-path: polygon(25% -1%, 75% -1%, 101% 50%, 75% 101%, 25% 101%, -1% 50%);
     transform: rotate(var(--_a, 0deg)) translateY(calc(100% + var(--g))) rotate(calc(-1*var(--_a, 0deg))) scale(var(--_t, 1));
-    cursor: pointer;
-    transition: .5s linear;
-    //border: 2px solid $bodyColor;
+    transition: .3s linear;
+    overflow: hidden;
   }
 
-  .gallery>a:hover {
-    --_t: 1.1;
-    background: $orangeColor  !important;
-  }
-
-
-
-  .gallery>a:nth-child(5) {
-    background-position: top !important;
-  }
-
-  .gallery>a:nth-child(6) {
-    background-position: top !important;
+  .gallery>div:hover {
+    --_t: 1.15;
+    background-position: center !important;
   }
 
 
-  .gallery>a:nth-child(1) {
+
+  .gallery>div:nth-child(1) {
     --_a: 0deg;
   }
 
-  .gallery>a:nth-child(2) {
+  .gallery>div:nth-child(2) {
     --_a: 60deg
   }
 
-  .gallery>a:nth-child(3) {
+  .gallery>div:nth-child(3) {
     --_a: 120deg
   }
 
-  .gallery>a:nth-child(4) {
+  .gallery>div:nth-child(4) {
     --_a: -60deg
   }
 
-  .gallery>a:nth-child(5) {
+  .gallery>div:nth-child(5) {
     --_a: -120deg
   }
 
-  .gallery>a:nth-child(6) {
+  .gallery>div:nth-child(6) {
     --_a: 180deg;
   }
 
-  .gallery>a:nth-child(7) {
+  .gallery>div:nth-child(7) {
     transform: scale(var(--_t, 1));
   }
 
 
   .gallery-body {
     margin: 0;
-    background: $bodyColor;
     display: grid;
     place-content: center;
   }
 
-  .hide {
-    display: none !important;
+  #second-style {
+    display: none;
   }
+
 }
 
-@media (max-width:640px) {
-  .gallery {
-    --s: 100px !important;
-    /* control the size */
-    --g: 10px !important;
-    /* control the gap */
-    display: grid;
-    margin: calc(var(--s) + var(--g));
-  }
-}
 
 
 
@@ -665,6 +741,19 @@ body.noScroll {
   .projects {
     width: unset;
     min-width: fit-content;
+
+    button {
+      display: none;
+    }
+
+    #gallery-body {
+      display: none !important;
+
+    }
+
+    #second-style {
+      display: grid !important;
+    }
   }
 
   .sectionDiv {
