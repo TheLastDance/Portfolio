@@ -591,20 +591,6 @@ body.noScroll {
     background-repeat: no-repeat !important;
     background-size: contain !important;
     overflow: hidden
-    // Fallback
-    @supports not (aspect-ratio: 16 / 9) {
-    &::before {
-      float: left;
-      padding-top: 60%;
-      content: "";
-    }
-
-    &::after {
-      display: block;
-      content: "";
-      clear: both;
-    }
-  }
 }
 
 .projects #second-style .project_item_new .project_info {
