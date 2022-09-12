@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { section } from "../animations/animation-section";
 import data_projects from "../data/projects_data";
 import { projectOpacityAnimation } from "../animations/animation-project-honey";
+import { projectsAnimation } from "../animations/animation-projects";
 import { useState } from "react";
 import { useEffect } from "react";
 
@@ -27,6 +28,7 @@ function Projects() {
         <motion.div initial='hidden' whileInView='visible' viewport={{ once: true }} id="Projects" className='projects sectionDiv'>
             <motion.h1 className="section_name" variants={section}>Projects</motion.h1>
             <button onClick={style}>change style</button>
+
             <div id="gallery-body" className="gallery-body">
                 <div className="gallery">
                     {data_projects.map((item, index) => <motion.div initial='hidden' whileInView='visible' viewport={{ once: true }} custom={index + 1} variants={projectOpacityAnimation} className="project_item" key={index} style={{ background: `url(${item.img})` }} onMouseOver={() => document.getElementById(`project-${index}`).classList.remove('hide')} onMouseOut={() => document.getElementById(`project-${index}`).classList.add('hide')}>
@@ -48,8 +50,8 @@ function Projects() {
                 </div>
             </div>
 
-            <div id="second-style" >
-                {data_projects.map((item, index) => <div key={index} className="project_item_new" style={{ background: `url(${item.img})` }} onMouseOver={() => document.getElementById(`project-${index}-new`).classList.remove('hide')} onMouseOut={() => document.getElementById(`project-${index}-new`).classList.add('hide')}>
+            <motion.div initial="hidden" whileInView='visible' viewport={{ once: true }} id="second-style">
+                {data_projects.map((item, index) => <motion.div custom={index + 1} variants={projectsAnimation} key={index} className={`project-${index + 1}-new project_item_new`} style={{ background: `url(${item.img2})` }} onMouseOver={() => document.getElementById(`project-${index}-new`).classList.remove('hide')} onMouseOut={() => document.getElementById(`project-${index}-new`).classList.add('hide')}>
                     <div id={`project-${index}-new`} className="project_info hide">
                         <div>
                             <ul className="project_technologies">
@@ -67,8 +69,8 @@ function Projects() {
                         </div>
 
                     </div>
-                </div>)}
-            </div>
+                </motion.div>)}
+            </motion.div>
 
         </motion.div>
     )
