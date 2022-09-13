@@ -62,5 +62,42 @@ const data_projects = [{
     github: 'https://github.com/TheLastDance/Food-Generator'
 }]
 
+const data_projects2 = [
+    {
+        name: 'Drum machine',
+        url: 'https://thelastdance.github.io/Drum_Machine/',
+        date: '22.08.2022',
+        github: 'https://github.com/TheLastDance/Drum_Machine'
+    },
+    {
+        name: 'Random quote machine',
+        url: 'https://thelastdance.github.io/Random_quote_machine/',
+        date: '15.08.2022',
+        github: 'https://github.com/TheLastDance/Random_quote_machine'
+    },
+    {
+        name: 'Konstruct',
+        url: 'https://thelastdance.github.io/konstruct/Konstrukt.html',
+        date: '24.11.2021',
+        github: 'https://github.com/TheLastDance/konstruct'
+    },
+    {
+        name: 'Porten',
+        url: 'https://thelastdance.github.io/Porten/Porten.html',
+        date: '18.11.2021',
+        github: 'https://github.com/TheLastDance/Porten'
+    },
+    {
+        name: 'Shake with minions CodeHS final project',
+        url: 'https://codehs.com/sandbox/thelastdance/shake-with-minons/run',
+        date: '25.10.2021'
+    },
+    {
+        name: 'BreakOut CodeHS',
+        url: 'https://codehs.com/sandbox/thelastdance/breakout/run',
+        date: '20.10.2021'
+    }
+]
 
-export default data_projects;
+
+export { data_projects, data_projects2 };

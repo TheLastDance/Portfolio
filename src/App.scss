@@ -40,7 +40,7 @@ body.noScroll {
 //scrollbar
 ::-webkit-scrollbar {
   width: 8px;
-  background: black; //was black
+  background: $bodyColor; //was black
   border-radius: 5px;
 }
 
@@ -413,23 +413,27 @@ body.noScroll {
 
 .projects {
   width: $contentWidth;
-  margin-inline: auto;
   margin-top: $marginTop_between_sections;
+  margin-left: auto;
+  margin-right: auto;
 
   button {
-    @include font ('Russo One', 1.2rem, $orangeColor);
-    background: black;
+    @include font ('Russo One', 1.2rem, $whiteColor);
+    background: $orangeColor;
     cursor: pointer;
     padding: 8px;
     border: 2px solid $whiteColor;
     position: relative;
+    transition: 0.3s linear;
   }
 
   button:hover {
-    border: 2px solid $orangeColor;
+    border: 2px solid $whiteColor;
     top: 2px;
     left: 2px;
     box-shadow: 1px 3px 5px $whiteColor;
+    background: black;
+    color: $orangeColor  !important;
   }
 
 
@@ -451,7 +455,12 @@ body.noScroll {
 
       a {
         text-decoration: none;
+        transition: 0.3s linear;
         @include font ('Minecrafter', 1.2rem, $whiteColor);
+      }
+
+      a:hover {
+        color: $bodyColor;
       }
     }
 
@@ -486,8 +495,14 @@ body.noScroll {
       padding-top: 5px;
 
       svg {
+        transition: 0.3s linear;
+        fill: $whiteColor;
         width: 30px;
         height: 30px;
+      }
+
+      svg:hover {
+        fill: $bodyColor;
       }
     }
   }
@@ -546,7 +561,6 @@ body.noScroll {
       display: flex;
       align-items: center;
       justify-content: center;
-      //position: relative;
 
       .hide {
         right: -105%;
@@ -607,7 +621,75 @@ body.noScroll {
     place-content: center;
   }
 
+  .more_projects {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
+    .projects_button {
+      @include font ('Russo One', 1.5rem, $whiteColor);
+      padding: 10px;
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    button:hover {
+      left: 0px;
+    }
+
+    ul {
+      margin-top: 15px;
+      margin-left: auto;
+      margin-right: auto;
+
+
+      li {
+        display: flex;
+        padding: 0.4rem;
+        align-items: center;
+        width: fit-content;
+
+        a {
+          text-decoration: none;
+          @include font ('Russo One', 1.5rem, $whiteColor);
+        }
+
+        p {
+          @include font ('Russo One', 1.3rem, $whiteColor);
+          position: relative;
+          margin-left: 10px;
+          top: 1px;
+        }
+
+        a:hover {
+          color: #dd8109;
+        }
+
+        .more_projects_icon {
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+
+          svg:hover {
+            fill: $whiteColor  !important;
+          }
+        }
+
+
+      }
+    }
+  }
+
+
+}
+
+
+.timeline {
+  width: $contentWidth;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $marginTop_between_sections;
 }
 
 
@@ -772,6 +854,12 @@ body.noScroll {
 
 
     }
+
+    .more_projects {
+      .projects_button {
+        display: unset;
+      }
+    }
   }
 
   .sectionDiv {
@@ -783,6 +871,61 @@ body.noScroll {
     margin-right: auto;
     width: fit-content;
   }
+
+  .timeline {
+    width: unset;
+    min-width: fit-content;
+  }
+}
+
+@media (max-width:640px) {
+  .projects {
+    .more_projects {
+
+
+      .projects_button {
+        @include font ('Russo One', 1.3rem, $orangeColor);
+        padding: 7px;
+        color: $whiteColor;
+      }
+
+      button:hover {
+        left: unset;
+        top: unset;
+        color: $orangeColor;
+      }
+
+      ul {
+        margin-top: 15px;
+
+        li {
+          padding: 0.3rem;
+
+          a {
+            @include font ('Russo One', 1.2rem, $whiteColor);
+          }
+
+          p {
+            @include font ('MADE TOMMY', 1.1rem, $whiteColor);
+            margin-left: 5px;
+            top: 0px;
+          }
+
+          .more_projects_icon {
+            margin-left: 5px;
+
+            svg {
+              width: 20px !important;
+              height: 20px !important;
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+
 }
 
 @media (max-width:515px) {
@@ -884,6 +1027,65 @@ body.noScroll {
         }
       }
 
+    }
+
+    .more_projects {
+      ul {
+        margin-left: unset;
+        margin-right: unset;
+
+        li:nth-child(5) {
+          a {
+            width: 275px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+@media (max-width:370px) {
+
+  .projects {
+    .more_projects {
+      ul {
+
+        li:nth-child(5) {
+          a {
+            width: 167px;
+          }
+        }
+
+        li {
+          padding: 2px;
+
+          a {
+            @include font ('Russo One', 1rem, $whiteColor);
+          }
+
+          p {
+            @include font ('MADE TOMMY', 0.9rem, $whiteColor);
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+@media(max-width:300px) {
+  .projects {
+    .more_projects {
+      ul {
+
+        li:nth-child(2) {
+          a:nth-child(1) {
+            width: 118px;
+          }
+        }
+      }
     }
   }
 }
