@@ -120,7 +120,7 @@ body.noScroll {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 3;
 
     svg {
       width: 40px;
@@ -138,7 +138,7 @@ body.noScroll {
     right: -100%;
     transition: 0.3s;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     background: $orangeColor;
 
     .burger_navbar {
@@ -685,11 +685,145 @@ body.noScroll {
 }
 
 
+
+//timeline
 .timeline {
   width: $contentWidth;
   margin-left: auto;
   margin-right: auto;
   margin-top: $marginTop_between_sections;
+}
+
+.timeline_2 {
+  position: relative;
+  width: 100%;
+  max-width: $contentWidth;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline_2::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: $whiteColor;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  //padding: 15px 30px;
+  //padding: 15px 0px 15px 30px;
+  margin-top: 25px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: 0px;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #0e0d0d;
+  border: 2px solid $whiteColor;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: $whiteColor;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 10px);
+  text-align: center;
+  letter-spacing: 1px;
+  z-index: 1;
+  @include font ('Blacksword', 0.8rem, $whiteColor);
+}
+
+.container.left .date {
+  right: -100px;
+}
+
+.container.right .date {
+  left: -100px;
+}
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  top: calc(50% - 20px);
+  border: 2px solid $whiteColor;
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+.container .content {
+  padding: 15px 100px 20px 20px;
+  background: $orangeColor;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.container.right .content {
+  padding: 15px 20px 20px 100px;
+  border-radius: 500px 0 0 500px;
+}
+
+.container .content h2 {
+  font-weight: 500;
+  line-height: 1.4rem;
+  margin: 0 0 5px 0;
+  @include font ('Blacksword', 1.4rem, $whiteColor); //maybe Russo One
+}
+
+.container .content p {
+  line-height: 1rem;
+  @include font ('MADE TOMMY', 1rem, black);
 }
 
 
@@ -928,6 +1062,54 @@ body.noScroll {
 
 }
 
+
+@media (max-width: 730px) {
+  .timeline_2::after {
+    left: 96px;
+  }
+
+  .container {
+    width: fit-content;
+    padding-left: 120px;
+    padding-right: 30px;
+    margin-top: 45px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after,
+  .container.right::after {
+    left: 88px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 96px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 5px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 0px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+
 @media (max-width:515px) {
   .about {
     width: 350px;
@@ -1043,6 +1225,65 @@ body.noScroll {
 
     }
   }
+
+  .timeline_2::after {
+    left: 76px;
+  }
+
+  .container {
+    width: fit-content;
+    padding-left: 100px;
+    padding-right: 0px;
+    margin-top: 45px;
+
+    .date {
+      @include font ('Blacksword', 0.6rem, $whiteColor);
+      top: calc(50% - 7px);
+    }
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after,
+  .container.right::after {
+    left: 68px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 76px;
+    border-color: transparent #006E51 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 5px;
+
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 126px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 0px 30px 75px;
+    border-radius: 500px 0 0 500px;
+
+    h2 {
+      @include font ('Blacksword', 1.2rem, $whiteColor);
+    }
+
+    p {
+      @include font ('MADE TOMMY', 0.8rem, black);
+      line-height: 0.8rem;
+    }
+  }
 }
 
 @media (max-width:370px) {
@@ -1071,21 +1312,6 @@ body.noScroll {
 
       }
 
-    }
-  }
-}
-
-@media(max-width:300px) {
-  .projects {
-    .more_projects {
-      ul {
-
-        li:nth-child(2) {
-          a:nth-child(1) {
-            width: 118px;
-          }
-        }
-      }
     }
   }
 }
@@ -1135,12 +1361,33 @@ body.noScroll {
     }
   }
 
+  .container .content {
+    padding: 20px 0 20px 70px !important;
+    border-radius: 150px 0 0 150px !important;
+  }
+
   .sectionDiv {
     margin-top: $marginTop_media_350;
   }
 
   .section_name {
     font-size: 2rem;
+  }
+}
+
+
+@media(max-width:300px) {
+  .projects {
+    .more_projects {
+      ul {
+
+        li:nth-child(2) {
+          a:nth-child(1) {
+            width: 118px;
+          }
+        }
+      }
+    }
   }
 }
 
