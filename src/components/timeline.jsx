@@ -10,7 +10,7 @@ function Timeline() {
 
     return (
         <motion.div initial='hidden' whileInView='visible' viewport={{ once: true }} id="Timeline" className='timeline sectionDiv'>
-            <motion.h1 className="section_name" variants={section}>Timeline</motion.h1>
+            <motion.h1 className="section_name" variants={section}>My road</motion.h1>
 
             <div className="timeline_2">
                 {timeline_data.map((item, index) => <motion.div initial={window.innerWidth > 1200 ? 'hidden' : 'hiddenY'} whileInView="visible" viewport={{ once: true }} variants={index % 2 === 0 ? timelineAnimationLeft : timelineAnimationRight} key={index} className={index % 2 === 0 ? 'container left' : 'container right'}>
@@ -27,6 +27,11 @@ function Timeline() {
                         </p>
                     </div>
                 </motion.div>)}
+            </div>
+
+            <div className="download_view_buttons">
+                <a href="files/CV.pdf" target="_blank" rel="noreferrer" download="CV"><button>download CV</button></a>
+                <a href="files/CV.pdf" target="_blank" rel="noreferrer"><button>view CV</button></a>
             </div>
         </motion.div>
     )

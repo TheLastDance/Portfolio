@@ -6,7 +6,7 @@ $whiteColor: #e4e7e6;
 $orangeColor: #dd8109;
 $contentWidth: 1000px; // was 1000
 $navbarHeight: 60px;
-$marginTop_between_sections: 240px;
+$marginTop_between_sections: 200px;
 $marginTop_media_1015: 150px;
 $marginTop_media_515: 135px;
 $marginTop_media_350: 110px;
@@ -408,6 +408,26 @@ body.noScroll {
   margin-bottom: 1rem;
   letter-spacing: 0.2rem;
   border-bottom: 2px solid $orangeColor;
+  padding-top: 70px;
+}
+
+button {
+  @include font ('Russo One', 1.2rem, $whiteColor);
+  background: $orangeColor;
+  cursor: pointer;
+  padding: 8px;
+  border: 2px solid $whiteColor;
+  position: relative;
+  transition: 0.3s linear;
+}
+
+button:hover {
+  border: 2px solid $orangeColor;
+  top: 2px;
+  left: 2px;
+  box-shadow: 1px 3px 5px $whiteColor;
+  background: black;
+  color: $orangeColor  !important;
 }
 
 
@@ -416,26 +436,6 @@ body.noScroll {
   margin-top: $marginTop_between_sections;
   margin-left: auto;
   margin-right: auto;
-
-  button {
-    @include font ('Russo One', 1.2rem, $whiteColor);
-    background: $orangeColor;
-    cursor: pointer;
-    padding: 8px;
-    border: 2px solid $whiteColor;
-    position: relative;
-    transition: 0.3s linear;
-  }
-
-  button:hover {
-    border: 2px solid $whiteColor;
-    top: 2px;
-    left: 2px;
-    box-shadow: 1px 3px 5px $whiteColor;
-    background: black;
-    color: $orangeColor  !important;
-  }
-
 
   .project_info {
     text-align: center;
@@ -638,38 +638,31 @@ body.noScroll {
       left: 0px;
     }
 
-    ul {
+    div {
       margin-top: 15px;
       margin-left: auto;
       margin-right: auto;
 
 
-      li {
-        display: flex;
+      p {
         padding: 0.4rem;
-        align-items: center;
-        width: fit-content;
+        @include font ('Russo One', 1.5rem, $whiteColor);
 
         a {
           text-decoration: none;
           @include font ('Russo One', 1.5rem, $whiteColor);
         }
 
-        p {
-          @include font ('Russo One', 1.3rem, $whiteColor);
-          position: relative;
-          margin-left: 10px;
-          top: 1px;
-        }
-
         a:hover {
           color: #dd8109;
         }
 
+        span {
+          display: inline-flex;
+        }
+
         .more_projects_icon {
           margin-left: 10px;
-          display: flex;
-          align-items: center;
 
           svg:hover {
             fill: $whiteColor  !important;
@@ -692,6 +685,29 @@ body.noScroll {
   margin-left: auto;
   margin-right: auto;
   margin-top: $marginTop_between_sections;
+
+  .download_view_buttons {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 75px;
+
+    a {
+      color: $whiteColor;
+      text-decoration: none;
+      width: 150px;
+      margin-left: 5px;
+      margin-right: 5px;
+
+      button {
+        width: 150px;
+      }
+    }
+
+    a:hover {
+      color: $orangeColor;
+    }
+  }
 }
 
 .timeline_2 {
@@ -824,6 +840,69 @@ body.noScroll {
 .container .content p {
   line-height: 1rem;
   @include font ('MADE TOMMY', 1rem, black);
+}
+
+.certifications {
+  width: $contentWidth;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: $marginTop_between_sections;
+
+  &_2 {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+
+    p {
+      @include font ('Russo One', 1.5rem, $whiteColor);
+      padding: 0.5rem;
+
+      a {
+        text-decoration: none;
+        @include font ('Russo One', 1.5rem, $whiteColor);
+      }
+
+      a:hover {
+        color: #dd8109;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: $marginTop_between_sections;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+
+  a:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  svg {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 0.1;
+    position: relative;
+    bottom: 0px;
+    fill: $orangeColor;
+  }
+
+  svg:hover {
+    opacity: 1;
+    bottom: 5px;
+  }
+
+  a {
+    @include font ('MADE TOMMY', 1rem, $whiteColor);
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 
@@ -961,6 +1040,12 @@ body.noScroll {
     }
   }
 
+  button:hover {
+    left: unset;
+    top: unset;
+    color: $orangeColor;
+  }
+
   .projects {
     width: unset;
     min-width: fit-content;
@@ -1004,62 +1089,26 @@ body.noScroll {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
+    padding-top: 0px;
   }
 
   .timeline {
     width: unset;
     min-width: fit-content;
   }
-}
 
-@media (max-width:640px) {
-  .projects {
-    .more_projects {
-
-
-      .projects_button {
-        @include font ('Russo One', 1.3rem, $orangeColor);
-        padding: 7px;
-        color: $whiteColor;
-      }
-
-      button:hover {
-        left: unset;
-        top: unset;
-        color: $orangeColor;
-      }
-
-      ul {
-        margin-top: 15px;
-
-        li {
-          padding: 0.3rem;
-
-          a {
-            @include font ('Russo One', 1.2rem, $whiteColor);
-          }
-
-          p {
-            @include font ('MADE TOMMY', 1.1rem, $whiteColor);
-            margin-left: 5px;
-            top: 0px;
-          }
-
-          .more_projects_icon {
-            margin-left: 5px;
-
-            svg {
-              width: 20px !important;
-              height: 20px !important;
-            }
-          }
-
-
-        }
-      }
-    }
+  .certifications {
+    width: unset;
+    min-width: fit-content;
   }
 
+  footer {
+
+    svg:hover {
+      opacity: unset;
+      bottom: unset;
+    }
+  }
 }
 
 
@@ -1212,17 +1261,48 @@ body.noScroll {
     }
 
     .more_projects {
-      ul {
-        margin-left: unset;
-        margin-right: unset;
 
-        li:nth-child(5) {
+
+      .projects_button {
+        @include font ('Russo One', 1.3rem, $whiteColor);
+        padding: 7px;
+      }
+
+      div {
+
+        p {
+          padding: 0.3rem;
+          @include font ('MADE TOMMY', 1.2rem, $whiteColor);
+
           a {
-            width: 275px;
+            @include font ('Russo One', 1.2rem, $whiteColor);
+          }
+
+          .more_projects_icon {
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+
+            svg {
+              width: 20px !important;
+              height: 20px !important;
+            }
           }
         }
       }
 
+    }
+  }
+
+  .timeline {
+    .download_view_buttons {
+      flex-direction: column;
+      display: flex;
+      margin-top: 50px;
+
+      a {
+        margin: 5px 0 0 0;
+      }
     }
   }
 
@@ -1284,37 +1364,29 @@ body.noScroll {
       line-height: 0.8rem;
     }
   }
-}
 
-@media (max-width:370px) {
+  .certifications {
 
-  .projects {
-    .more_projects {
-      ul {
+    &_2 {
 
-        li:nth-child(5) {
-          a {
-            width: 167px;
-          }
+      p {
+        @include font ('Russo One', 1.2rem, $whiteColor);
+
+        a {
+          @include font ('Russo One', 1.2rem, $whiteColor);
         }
-
-        li {
-          padding: 2px;
-
-          a {
-            @include font ('Russo One', 1rem, $whiteColor);
-          }
-
-          p {
-            @include font ('MADE TOMMY', 0.9rem, $whiteColor);
-          }
-        }
-
       }
+    }
+  }
 
+  footer {
+    a {
+      @include font ('MADE TOMMY', 0.8rem, $whiteColor);
     }
   }
 }
+
+
 
 @media (max-width: 350px) {
   .about {
@@ -1375,21 +1447,13 @@ body.noScroll {
   }
 }
 
-
-@media(max-width:300px) {
-  .projects {
-    .more_projects {
-      ul {
-
-        li:nth-child(2) {
-          a:nth-child(1) {
-            width: 118px;
-          }
-        }
-      }
-    }
+@media(max-width:320px) {
+  .section_name {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
   }
 }
+
 
 
 //height

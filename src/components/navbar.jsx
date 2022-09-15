@@ -23,7 +23,7 @@ function Navbar() {
                     <li><a href="#About">About</a></li>
                     <li><a href="#Skills">Skills</a></li>
                     <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Timeline">Timeline</a></li>
+                    <li><a href="#Timeline">My road</a></li>
                     <li><a href="#Certifications">Certifications</a></li>
                 </ul>
             </div>

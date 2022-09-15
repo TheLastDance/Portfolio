@@ -34,7 +34,7 @@ function Burger() {
                         <li><a href="#About" onClick={clicker}>About</a></li>
                         <li><a href="#Skills" onClick={clicker}>Skills</a></li>
                         <li><a href="#Projects" onClick={clicker}>Projects</a></li>
-                        <li><a href="#Timeline" onClick={clicker}>Timeline</a></li>
+                        <li><a href="#Timeline" onClick={clicker}>My road</a></li>
                         <li><a href="#Certifications" onClick={clicker}>Certifications</a></li>
                     </ul>
                     <div className="burger_social_links">

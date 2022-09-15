@@ -6,6 +6,8 @@ import Burger from './components/burger';
 import Skills from './components/skills';
 import Projects from './components/projects';
 import Timeline from './components/timeline';
+import Certifications from './components/certifications';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Skills />
       <Projects />
       <Timeline />
+      <Certifications />
+      <Footer />
     </div>
   );
 }
