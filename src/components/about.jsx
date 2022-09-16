@@ -27,9 +27,10 @@ function About() {
                         />
                     </div>
                     <div className="my_story">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi deserunt ex aliquam nulla, voluptatibus unde, minima quae provident illo quo, nobis labore autem. Aspernatur amet modi dolorum delectus minima.
-                            Minima repellat ducimus magnam odit, fugit perspiciatis nostrum excepturi eos magni nam blanditiis ab reprehenderit molestiae impedit obcaecati? Voluptates tempore nobis sit labore quia ab odio veniam hic totam provident!
-                            Asperiores delectus est iste sit deleniti consequatur alias odit rem molestiae nisi deserunt, odio optio, explicabo veniam facere quam voluptatibus modi nemo obcaecati dignissimos iusto. Deleniti nostrum a culpa facilis!
+                        <p>I am from Tbilisi, Georgia and I really enjoy coding. From childhood I was very close to PC's, I liked to learn things about windows OS and play computer games.
+                            In 2020 year I was graduated from the Ilia State University, Tbilisi with a degree of buisness administration. During my university days, I always preferred mathematical and logic subjects than a theoretical ones.
+                            I liked to think about algorithms of mathematical tasks. And because I am little bit introvert person and prefer to work remotly, one day I decided to try and learn frontend developement.
+                            After half year of studying I understood that I enjoy it and I want to improve myself in that field. For now I am learning frontend development for more year and I am ready to start my first job.
                         </p>
                     </div>
                 </motion.div>

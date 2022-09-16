@@ -6,7 +6,7 @@ const data_certifications = [
     },
     {
         name: 'FreeCodeCamp JavaScript Algorithms and Data Structures',
-        date: '01.04.2022',
+        date: '01.03.2022',
         url: 'https://www.freecodecamp.org/certification/fcc911fe668-59e7-4986-8604-47264dc1d40d/javascript-algorithms-and-data-structures'
     },
     {
