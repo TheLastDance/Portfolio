@@ -12,7 +12,7 @@ function Timeline() {
             <motion.h1 className="section_name" variants={section}>My road</motion.h1>
 
             <div className="timeline_2">
-                {timeline_data.map((item, index) => <motion.div initial={window.innerWidth > 1200 ? 'hidden' : 'hiddenY'} whileInView="visible" viewport={{ once: true }} variants={index % 2 === 0 ? timelineAnimationLeft : timelineAnimationRight} key={index} className={index % 2 === 0 ? 'container left' : 'container right'}>
+                {[...timeline_data].map((item, index) => <motion.div initial={window.innerWidth > 1200 ? 'hidden' : 'hiddenY'} whileInView="visible" viewport={{ once: true }} variants={index % 2 === 0 ? timelineAnimationLeft : timelineAnimationRight} key={index} className={index % 2 === 0 ? 'container left' : 'container right'}>
                     <div title="End time" className="date">{item.date}</div>
                     <div className="icon"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
                         className="bi bi-gear-fill" viewBox="0 0 16 16">
@@ -25,7 +25,8 @@ function Timeline() {
                             {item.text}
                         </p>
                     </div>
-                </motion.div>)}
+                </motion.div>
+                )}
             </div>
 
             <div className="download_view_buttons">

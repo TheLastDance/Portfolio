@@ -11,7 +11,7 @@ const timeline_data = [
     },
     {
         header: 'VS Code and first web pages',
-        text: <span>Then I realize that I need to learn VS Code, because code writing in codepen was a little bit painful and took a long time. So I started to watch some tutorials on youtube. Next few days I spent to test many things in VS Code and choose-download extensions for it. When I realized that I am friendly with VS Code, I chose some website templates on Figma for begginers and made <a href="https://thelastdance.github.io/Porten/Porten.html" target="_blank" rel="noreferrer">Porten</a> and <a href="https://thelastdance.github.io/konstruct/Konstrukt.html" target="_blank" rel="noreferrer">Konstruct</a> pages with full responsivity using html/css. </span>,
+        text: <span>Then I realize that I need to learn VS Code, because code writing in codepen was a little bit painful and took a long time. So I started to watch some tutorials on youtube. Next few days I spent to test many things in VS Code and choose-download extensions for it. When I realized that I am familiar with VS Code, I chose some website templates on Figma for begginers and made <a href="https://thelastdance.github.io/Porten/Porten.html" target="_blank" rel="noreferrer">Porten</a> and <a href="https://thelastdance.github.io/konstruct/Konstrukt.html" target="_blank" rel="noreferrer">Konstruct</a> pages with full responsivity using html/css. </span>,
         date: '24.11.2021'
     },
     {
@@ -31,18 +31,43 @@ const timeline_data = [
     },
     {
         header: 'CodeWars',
-        text: <span> CodeWars week 14.04.2022 </span>,
+        text: <span> I actively started to use CodeWars resource on 14.04.2022, because I really missed algorithms and realized that I need a little workout on my regular expression skills. In 2.5 weeks I passed much tasks (kata's) and level upped my rank to 5 kyu.   </span>,
         date: '02.05.2022'
     },
     {
         header: 'BrightLights project',
-        text: <span> BrightLights project </span>,
+        text: <span> Then I have worked on another <a href="https://thelastdance.github.io/BrightLights/index.html" target="_blank" rel="noreferrer">project</a> , the main aim of this project was to train some webdev techniques: like drop-down navbar on mouseover, burger-menu, sliders and absolute positioning. Like always, I just found suitable template on Figma and made a small changes depending on my tasks. I wanted to make everything by myself, without any tutorial help. I also had an idea to try make slider with changable css property display to none using JS, of course it's not the best way to write slider, but at that moment I was excited to try this.    </span>,
         date: '19.05.2022'
     },
     {
-        header: 'Front End Development Libraries',
-        text: <span> First library 27.05.2022</span>,
-        date: '00.00.2022'
+        header: 'FreeCodeCamp libraries course review',
+        text: <span> Next few days I spent to get general information about frameworks and libraries that I was going to learn in future months. So on 27.05.2022 I started "FreeCodeCamp Front End Development Libraries" course, and honestly I am not very satisfied with that one, because information in that course is very old and incomplete. So after each section I was able to find additional course on youtube to get more modern and complete information about each library. </span>,
+        date: '27.05.2022'
+    },
+    {
+        header: 'Bootstrap section',
+        text: <span> I have finished Bootstrap freeCodeCamp section during one day (on 27.05.2022) and of course I understood this knowledge was not enough. Then I chose a really great <a href="https://www.youtube.com/watch?v=-qfEOE4vtxE" target="_blank" rel="noreferrer">video course</a> about Bootstrap on FreeCodeCamp's youtube channel, which I highly recommend. So for next 4-5 days I was learning Bootstrap css library from that course. I understood that I can make much things, without using any JS code and for that I just need to a little bit customize bootstrap templates.</span>,
+        date: '02.06.2022'
+    },
+    {
+        header: 'Jquery and SASS + real project',
+        text: <span> I passed basic Jquery section on FreeCodeCamp, but didn't go too deep. I think Jquery isn't actual in 2022 year, because you can do the same things using just vanilla JS now. Then I passed SASS section and for better knowledge also watched <a href="https://www.youtube.com/watch?v=_a5j7KoflTs" target="_blank" rel="noreferrer">this video course </a>. After that I realized that I am ready to try myself and write new project using libraries that I already learned (Bootstrap and SASS). At that time a had an option to make a real project for my friend, she has her own tour-company in Tbilisi. So I started to make <a href="https://thelastdance.github.io/FreeTour/index.html" target="_blank" rel="noreferrer">website</a> for this company using only html, Bootstrap and SASS. I had an aim to try do this without any JS, just to test myself in Bootstrap. I made this site very fast and in future we will just add text content to this website. </span>,
+        date: '14.06.2022'
+    },
+    {
+        header: 'React section + calculator project',
+        text: <span> On 15.06.2022 I started to learn React framework from FreeCodeCamp and I have done it in one week, of course I realized that it couldn't be enough again, and I understood that react section is also very old there, because using functional components is much easier than class components, so I decided to learn React hooks to start using functional components and be familiar with both. I found one youtube <a href="https://www.youtube.com/watch?v=9KJxaFHotqI" target="_blank" rel="noreferrer">course</a> about hooks on russian language (I know russian, so usually I use several languages for googling). After good understanding of the most needful hooks I started to practise. At some time I understood that I am ready to make project from FreeCodeCamp's course and I chose the most hard one - <a href="https://thelastdance.github.io/React-Calculator/" target="_blank" rel="noreferrer">Calculator</a>. The most difficult things in that project were dealing with numbers in JS, like rounding them, also I worked much on regular expressions to avoid bugs in calculation display with many operators, dots and so on.</span>,
+        date: '24.07.2022'
+    },
+    {
+        header: 'Redux and Framer Motion + todo list',
+        text: <span> Then I started to learn Redux and it seemed a little difficult to me, I didn't understand it entirely, but again I realized that FreeCodeCamp has an old information, so I chose another <a href="https://www.youtube.com/watch?v=zrs7u6bdbUw" target="_blank" rel="noreferrer">youtube tutorial</a> about Redux/Redux Toolkit, honestly I didn't like that one, because tutor was in a little bit rush, but anyway I understrand many things and made his project. So then I passed <a href="https://www.youtube.com/watch?v=C0fBnil_Im4&list=PLiZoB8JBsdznQv3kAEvTzDP2qjaUI8Vo7">second tutorial</a> on russian language. After these courses I used only Redux Toolkit, because it's just easier and more modern. During this time I also learned basics of Framer Motion animation library and finally made a simple <a href="https://thelastdance.github.io/ToDo-List/" target="_blank" rel="noreferrer">to-do list project</a> using, Redux toolkit, React, Framer Motion and Bootstrap, also I saved all todo's in localStorage using Redux persist library. </span>,
+        date: '06.08.2022'
+    },
+    {
+        header: 'FreeCodeCamp libraries projects',
+        text: <span> In next some days I finished the rest of the freeCodeCamp's course. Then I started to make other FreeCodeCamp's projects, honsetly all of them seemed easy to me. I spent 2-3 days on each of these projects and you can check them in <a href="#Projects">projects section</a>   </span>,
+        date: '26.08.2022'
     }
 ]
 
