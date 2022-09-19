@@ -6,7 +6,7 @@ $whiteColor: #e4e7e6;
 $orangeColor: #dd8109;
 $contentWidth: 1000px; // was 1000
 $navbarHeight: 60px;
-$marginTop_between_sections: 200px;
+$marginTop_between_sections: 220px;
 $marginTop_media_1015: 150px;
 $marginTop_media_515: 135px;
 $marginTop_media_350: 110px;
@@ -690,7 +690,7 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
     width: fit-content;
-    margin-top: 75px;
+    margin-top: 145px;
 
     a {
       color: $whiteColor;
@@ -716,6 +716,21 @@ button:hover {
   max-width: $contentWidth;
   margin: 0 auto;
   padding: 15px 0;
+
+  .button_div {
+    display: flex;
+    position: relative;
+    bottom: -70px;
+
+    .more_timeline_button {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .more_timeline_button:hover {
+      left: 0px;
+    }
+  }
 }
 
 .timeline_2::after {
@@ -842,6 +857,12 @@ button:hover {
   @include font ('MADE TOMMY', 1rem, black);
 }
 
+.container .content p a {
+  color: $whiteColor;
+}
+
+
+
 .certifications {
   width: $contentWidth;
   margin-left: auto;
@@ -890,6 +911,7 @@ footer {
     position: relative;
     bottom: 0px;
     fill: $orangeColor;
+    transition: 0.2s linear;
   }
 
   svg:hover {
@@ -1040,6 +1062,10 @@ footer {
     }
   }
 
+  button {
+    transition: unset !important;
+  }
+
   button:hover {
     left: unset;
     top: unset;
@@ -1077,6 +1103,7 @@ footer {
     .more_projects {
       .projects_button {
         display: unset;
+        transition: unset !important;
       }
     }
   }
@@ -1095,6 +1122,16 @@ footer {
   .timeline {
     width: unset;
     min-width: fit-content;
+
+    .button_div {
+      display: flex;
+
+      button {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
 
     .container.left .content,
     .container.right .content {
@@ -1116,6 +1153,10 @@ footer {
   }
 
   footer {
+
+    svg {
+      transition: unset;
+    }
 
     svg:hover {
       opacity: unset;
@@ -1168,6 +1209,13 @@ footer {
   .container.right .content {
     padding: 30px 0px 30px 90px;
     border-radius: 500px 0 0 500px;
+  }
+
+  .container {
+
+    .date {
+      @include font ('Blacksword', 12px, $whiteColor);
+    }
   }
 }
 
@@ -1311,7 +1359,7 @@ footer {
     .download_view_buttons {
       flex-direction: column;
       display: flex;
-      margin-top: 50px;
+      margin-top: 120px;
 
       a {
         margin: 5px 0 0 0;
@@ -1455,10 +1503,26 @@ footer {
   }
 }
 
-@media(max-width:320px) {
+@media(max-width:319px) {
   .section_name {
     font-size: 1.8rem;
     letter-spacing: 2px;
+  }
+
+  .timeline {
+
+    .container.left .content,
+    .container.right .content {
+
+      h2 {
+        @include font ('Blacksword', 1rem, $whiteColor);
+      }
+
+      p {
+        @include font ('MADE TOMMY', 12px, black);
+        line-height: 12px;
+      }
+    }
   }
 }
 

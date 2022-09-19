@@ -1,12 +1,15 @@
 const projectsAnimation = {
     hidden: {
         opacity: 0,
+        y: 100,
     },
-    visible: custom => ({
+    visible: {
         opacity: 1,
-        transition: { ease: "easeOut", delay: 0.5 * custom },
-    }),
+        y: 0,
+        transition: { ease: "linear", delay: 0.7 },
+    },
 }
+
 
 const moreProjectsAnimation = {
     hidden: {
