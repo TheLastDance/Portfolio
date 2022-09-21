@@ -1442,6 +1442,13 @@ footer {
   }
 }
 
+@media(max-width:440px) {
+  .container .content {
+    padding: 20px 0 20px 70px !important;
+    border-radius: 150px 0 0 150px !important;
+  }
+}
+
 
 
 @media (max-width: 350px) {
@@ -1489,10 +1496,6 @@ footer {
     }
   }
 
-  .container .content {
-    padding: 20px 0 20px 70px !important;
-    border-radius: 150px 0 0 150px !important;
-  }
 
   .sectionDiv {
     margin-top: $marginTop_media_350;

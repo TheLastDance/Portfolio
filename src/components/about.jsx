@@ -27,9 +27,9 @@ function About() {
                     </div>
                     <div className="my_story">
                         <p>I am from Tbilisi, Georgia and I really enjoy coding. From childhood I was very close to PC's, I liked to learn things about windows OS and play computer games.
-                            In 2020 year I was graduated from the Ilia State University, Tbilisi with a degree of buisness administration. During my university days, I always preferred mathematical and logic subjects than a theoretical ones.
-                            I liked to think about algorithms of mathematical tasks. And because I am little bit introvert person and prefer to work remotly, one day I decided to try and learn frontend developement.
-                            After half year of studying I understood that I enjoy it and I want to improve myself in that field. For now I am learning frontend development for more year and I am ready to start my first job.
+                            In 2020 year I was graduated from the Ilia State University, Tbilisi with a degree of buisness administration. During my university days, I always preferred some logic subjects than a theoretical ones.
+                            I liked to think about algorithms of mathematical tasks. I also feel much more comfortable when I work remotly so, one day I decided to try and learn frontend developement.
+                            After half year of studying I understood that I enjoy it and I want to improve myself in that field. I learn frontend development for more than year and I am ready to start my first job.
                         </p>
                     </div>
                 </div>
