@@ -427,7 +427,7 @@ button:hover {
   left: 2px;
   box-shadow: 1px 3px 5px $whiteColor;
   background: black;
-  color: $orangeColor  !important;
+  color: $orangeColor !important;
 }
 
 
@@ -509,7 +509,7 @@ button:hover {
 
   #second-style {
     display: grid;
-    grid-template-areas: "grid-1 grid-2""grid-3 grid-4""grid-5 grid-6""grid-7 grid-7";
+    grid-template-areas: "grid-1 grid-2" "grid-3 grid-4" "grid-5 grid-6" "grid-7 grid-7";
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 2fr);
     margin-top: 16px;
@@ -526,7 +526,7 @@ button:hover {
       overflow: hidden;
       background-position: center !important;
       background-repeat: no-repeat !important;
-      background-size: contain !important;
+      background-size: cover !important;
       aspect-ratio: 5/3;
 
 
@@ -665,7 +665,7 @@ button:hover {
           margin-left: 10px;
 
           svg:hover {
-            fill: $whiteColor  !important;
+            fill: $whiteColor !important;
           }
         }
 
