@@ -15,11 +15,9 @@ function About() {
                         <h2>Hello, I am <span>David</span></h2>
                         <Typed
                             strings={[
-                                "Junior",
+                                "Frontend",
                                 "",
-                                "Junior frontend",
-                                "",
-                                "Junior frontend developer"
+                                "Frontend developer"
                             ]}
                             typeSpeed={50}
                             backSpeed={50}
@@ -31,7 +29,7 @@ function About() {
                             Tbilisi with a degree of buisness administration. During my university days, I always preferred some logic subjects to a theoretical ones.
                             I liked to think about algorithms of mathematical tasks. I also feel much more comfortable when I work remotly so,
                             one day I decided to try and learn frontend developement. After half a year of study I understood that I enjoy it and
-                            I want to improve myself in this area. I have been studying frontend development for more than a year and I am ready to start my first job.
+                            I want to improve myself in this area. For now I have 1-2 year experience in frontend development and I am ready to start a job.
                         </p>
                     </div>
                 </div>
