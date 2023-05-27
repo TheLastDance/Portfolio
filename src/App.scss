@@ -292,7 +292,7 @@ body.noScroll {
         letter-spacing: 1px;
         inline-size: 100%;
         overflow-wrap: break-word;
-        background-image: url(../public/photo/portfolio_photo.jpg);
+        background-image: url(assets/photo/portfolio_photo.jpg);
         background-clip: text;
         color: transparent;
         filter: brightness(1.2);
@@ -352,29 +352,30 @@ body.noScroll {
 
   &_2 {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
-    grid-template-rows: repeat(4, 150px);
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(5, 150px);
     justify-content: center;
     align-content: center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 
-    div:nth-child(3) {
+    div:nth-child(3),
+    div:nth-child(4) {
       width: 90px;
       height: 90px;
       margin-top: 10px;
     }
 
-    div:nth-child(9) {
+    div:nth-child(13) {
       height: 50px;
     }
 
-    div:nth-child(10) {
+    div:nth-child(14) {
       fill: #0f8797;
     }
 
-    div:nth-child(12) {
+    div:nth-child(16) {
       fill: #0e67cc;
     }
 
@@ -388,9 +389,14 @@ body.noScroll {
       margin-right: auto;
       align-self: center;
 
-      svg {
+      svg,
+      img {
         width: 100%;
         height: 100%;
+      }
+
+      img {
+        transform: scale(1.5);
       }
     }
 
@@ -1046,7 +1052,7 @@ footer {
 
     &_2 {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       grid-template-rows: none;
       row-gap: 30px;
 
@@ -1167,6 +1173,12 @@ footer {
 
 
 @media (max-width: 730px) {
+  .skills {
+    &_2 {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
   .timeline_2::after {
     left: 96px;
   }
@@ -1269,7 +1281,8 @@ footer {
 
     &_2 {
 
-      div:nth-child(3) {
+      div:nth-child(3),
+      div:nth-child(4) {
         width: 55px;
         height: 55px;
         margin-top: 5px;
