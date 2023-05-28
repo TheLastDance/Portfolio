@@ -515,14 +515,13 @@ button:hover {
 
   #second-style {
     display: grid;
-    grid-template-areas: "grid-1 grid-2" "grid-3 grid-4" "grid-5 grid-6" "grid-7 grid-7";
+    grid-template-areas: "grid-1 grid-1" "grid-2 grid-3" "grid-4 grid-5" "grid-6 grid-7" "grid-8 grid-9";
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 2fr);
     margin-top: 16px;
     gap: 5px;
     width: 100%;
 
-    @for $i from 1 through 7 {
+    @for $i from 1 through 9 {
       .project-#{$i}-new {
         grid-area: grid-#{$i};
       }
@@ -549,82 +548,6 @@ button:hover {
     .hide {
       right: -100%;
     }
-  }
-
-
-  .gallery {
-    --s: 320px;
-    /* control the size */
-    --g: 40px;
-    /* control the gap */
-    display: grid;
-    margin: calc(var(--s) + var(--g));
-
-
-    .project_item {
-      background-position: center !important;
-      height: fit-content;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      .hide {
-        right: -105%;
-      }
-    }
-  }
-
-  .gallery>div {
-    grid-area: 1/1;
-    width: var(--s);
-    aspect-ratio: 1.15;
-    object-fit: cover;
-    clip-path: polygon(25% -1%, 75% -1%, 101% 50%, 75% 101%, 25% 101%, -1% 50%);
-    transform: rotate(var(--_a, 0deg)) translateY(calc(100% + var(--g))) rotate(calc(-1*var(--_a, 0deg))) scale(var(--_t, 1));
-    transition: .3s linear;
-    overflow: hidden;
-  }
-
-  .gallery>div:hover {
-    --_t: 1.15;
-    background-position: center !important;
-  }
-
-
-
-  .gallery>div:nth-child(1) {
-    --_a: 0deg;
-  }
-
-  .gallery>div:nth-child(2) {
-    --_a: 60deg
-  }
-
-  .gallery>div:nth-child(3) {
-    --_a: 120deg
-  }
-
-  .gallery>div:nth-child(4) {
-    --_a: -60deg
-  }
-
-  .gallery>div:nth-child(5) {
-    --_a: -120deg
-  }
-
-  .gallery>div:nth-child(6) {
-    --_a: 180deg;
-  }
-
-  .gallery>div:nth-child(7) {
-    transform: scale(var(--_t, 1));
-  }
-
-
-  .gallery-body {
-    margin: 0;
-    display: grid;
-    place-content: center;
   }
 
   .more_projects {
@@ -937,55 +860,6 @@ footer {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //media
 @media (max-width:1015px) {
   ::-webkit-scrollbar {
@@ -1084,11 +958,6 @@ footer {
 
     button {
       display: none;
-    }
-
-    #gallery-body {
-      display: none !important;
-
     }
 
     #second-style {
@@ -1322,16 +1191,8 @@ footer {
   .projects {
 
     #second-style {
-      display: grid !important;
-      grid-template-areas: unset;
-      grid-template-columns: repeat(1, 1fr) !important;
-
-      @for $i from 1 through 7 {
-        .project-#{$i}-new {
-          grid-area: unset;
-        }
-      }
-
+      display: flex !important;
+      flex-direction: column;
     }
 
     .more_projects {
