@@ -3,6 +3,7 @@ import { section } from "../animations/animation-section";
 import { data_projects, data_projects2 } from "../data/projects_data";
 import { projectsAnimation, moreProjectsAnimation } from "../animations/animation-projects";
 import { useState } from "react";
+import skillsData from "../data/skills_svg";
 
 function Projects() {
     const [button, setButton] = useState(false);
@@ -16,7 +17,9 @@ function Projects() {
                     <div id={`project-${index}-new`} className="project_info hide">
                         <div>
                             <ul className="project_technologies">
-                                {item.svg.map((icon, index) => <li key={index}> {icon} </li>)}
+                                {skillsData.filter(el => item.svg.includes(el.name))
+                                    .sort((a, b) => item.svg.indexOf(a.name) - item.svg.indexOf(b.name))
+                                    .map((icon, index) => <li key={index} title={icon.name} > {icon.src} </li>)}
                             </ul>
                             <div className="project_name">
                                 <a title="Click to view" href={item.url} target="_blank" rel="noreferrer">{item.name}</a>

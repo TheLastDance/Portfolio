@@ -1,4 +1,11 @@
+import certificate from "../assets/photo/certificate.png"
+
 const data_certifications = [
+    {
+        name: "Evolution Typescript Bootcamp",
+        date: "05.05.2023",
+        url: certificate
+    },
     {
         name: 'FreeCodeCamp Front End Development Libraries',
         date: '27.08.2022',
