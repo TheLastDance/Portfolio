@@ -1,9 +1,10 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.5329caa8.css",
-    "main.js": "/Portfolio/static/js/main.0936bf97.js",
+    "main.js": "/Portfolio/static/js/main.382472f3.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/project_poker.jpg": "/Portfolio/static/media/project_poker.314e436efa8f85a0fa1e.jpg",
+    "static/media/certificate.png": "/Portfolio/static/media/certificate.c49813949a0ef317a560.png",
     "static/media/project_food_generator_2.jpg": "/Portfolio/static/media/project_food_generator_2.673b431fae765e089fdb.jpg",
     "static/media/portfolio_photo.jpg": "/Portfolio/static/media/portfolio_photo.d762f74408fba6ec66ea.jpg",
     "static/media/project_freeTour_2.jpg": "/Portfolio/static/media/project_freeTour_2.bf3bb0079f08aea2a1a5.jpg",
@@ -32,11 +33,11 @@
     "static/media/Babylon.js-Logo.wine.svg": "/Portfolio/static/media/Babylon.js-Logo.wine.7d4352497f6b35931ac90180db6c0637.svg",
     "index.html": "/Portfolio/index.html",
     "main.5329caa8.css.map": "/Portfolio/static/css/main.5329caa8.css.map",
-    "main.0936bf97.js.map": "/Portfolio/static/js/main.0936bf97.js.map",
+    "main.382472f3.js.map": "/Portfolio/static/js/main.382472f3.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5329caa8.css",
-    "static/js/main.0936bf97.js"
+    "static/js/main.382472f3.js"
   ]
 }
