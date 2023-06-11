@@ -3,6 +3,7 @@ import { useState } from "react";
 import { section } from "../animations/animation-section";
 import { timeline_data } from "../data/timeline_data";
 import Item from "./timeline_item";
+import CV from "../assets/files/CV.pdf"
 
 
 
@@ -25,8 +26,8 @@ function Timeline() {
             </div>
 
             <div className="download_view_buttons">
-                <a href="files/CV.pdf" target="_blank" rel="noreferrer" download="CV"><button>download CV</button></a>
-                <a href="files/CV.pdf" target="_blank" rel="noreferrer"><button>view CV</button></a>
+                <a href={CV} target="_blank" rel="noreferrer" download="CV"><button>download CV</button></a>
+                <a href={CV} target="_blank" rel="noreferrer"><button>view CV</button></a>
             </div>
         </motion.div>
     )
