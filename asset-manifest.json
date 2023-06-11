@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.48c4c66d.css",
+    "main.css": "/Portfolio/static/css/main.5329caa8.css",
     "main.js": "/Portfolio/static/js/main.0936bf97.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/project_poker.jpg": "/Portfolio/static/media/project_poker.314e436efa8f85a0fa1e.jpg",
@@ -31,12 +31,12 @@
     "static/media/Minecrafter.woff2": "/Portfolio/static/media/Minecrafter.76fa3bf11a25741b0b15.woff2",
     "static/media/Babylon.js-Logo.wine.svg": "/Portfolio/static/media/Babylon.js-Logo.wine.7d4352497f6b35931ac90180db6c0637.svg",
     "index.html": "/Portfolio/index.html",
-    "main.48c4c66d.css.map": "/Portfolio/static/css/main.48c4c66d.css.map",
+    "main.5329caa8.css.map": "/Portfolio/static/css/main.5329caa8.css.map",
     "main.0936bf97.js.map": "/Portfolio/static/js/main.0936bf97.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.48c4c66d.css",
+    "static/css/main.5329caa8.css",
     "static/js/main.0936bf97.js"
   ]
 }
