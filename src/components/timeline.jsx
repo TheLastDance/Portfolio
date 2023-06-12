@@ -9,7 +9,7 @@ import CV from "../assets/files/CV.pdf"
 
 function Timeline() {
 
-    const [reverse, setReverse] = useState(false);
+    const [reverse, setReverse] = useState(true);
     const [more, setMore] = useState(false);
 
     return (

@@ -26,7 +26,7 @@ const data_projects = [{
     url: 'https://possible-action.surge.sh',
     svg: ["REACT", "SCSS"],
     date: '26.12.2022',
-    github: 'https://github.com/TheLastDance/Hexagon_2048'
+    github: 'https://github.com/TheLastDance/Hexagon_2048_readme'
 },
 {
     name: 'Product landing',

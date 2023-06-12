@@ -68,6 +68,31 @@ const timeline_data = [
         header: 'FreeCodeCamp libraries projects',
         text: <span>In the next few days I completed the rest of the freeCodeCamp's course. Then I started creating other FreeCodeCamp's projects, to be honest they all seemed easy to me. I spent 2-3 days on each of these projects and you can check them in the <a href="#Projects">projects section</a>   </span>,
         date: '26.08.2022'
+    },
+    {
+        header: 'Portfolio website',
+        text: <span>After successfully completing all the FreeCodeCamp libraries projects, I ventured into creating my own portfolio website, which you are currently exploring. This website serves as a testament to my progress and skills as a web developer. I constantly update it to showcase my latest achievements, such as the completion of new projects and other significant milestones. By maintaining an up-to-date portfolio, I ensure that visitors can witness my growth and dedication throughout my career in web development.</span>,
+        date: '21.09.2022'
+    },
+    {
+        header: 'Product landing project',
+        text: <span>When I finished making Portfolio website I got test assignment from a foreign web development company. The task involved creating a comprehensive product landing website, which I successfully accomplished. For this project, I utilized React with class components, as required by the company. Additionally, I implemented Redux Toolkit for efficient state management, employed GraphQL for querying the product database, and utilized SCSS for styling. The development process spanned approximately two weeks, during which I created an initial version of the website. Subsequently, I further enhanced the project by addressing identified issues and optimizing its performance. If you wish to experience the project firsthand, it can be installed locally with the necessary endpoint server. Alternatively, you can watch a <a href="https://www.youtube.com/watch?v=-xRsBkRL2Ik" target="_blank" rel="noreferrer">video demonstration</a> of the first version project on YouTube.</span>,
+        date: '10.10.2022'
+    },
+    {
+        header: 'React Router DOM + GraphQL',
+        text: <span>After completing the first version of the previous project, I identified areas of my knowledge that needed improvement. As a result, I dedicated time to learning more about the React Router DOM library and GraphQL. This newfound knowledge proved to be instrumental in the development of an updated version of the product landing project. Leveraging my enhanced understanding, I was able to resolve minor issues and enhance the overall user experience.</span>,
+        date: '03.11.2022'
+    },
+    {
+        header: 'Rest countries project',
+        text: <span>The next milestone in my learning process was the development of the <a href="https://thelastdance.github.io/Rest-Countries-Api-Project/" target="_blank" rel="noreferrer">Rest countries</a> project. This project aimed to provide detailed information about every country in the world. The main focus was to utilize the React Router DOM library and apply the knowledge I had gained from teoretical learning. By accomplishing this goal, I further expanded my proficiency in React and enhanced my ability to build dynamic and interactive web applications.</span>,
+        date: '18.11.2022'
+    },
+    {
+        header: 'Bootcamp test assignment',
+        text: <span>The next stage proved to be a game-changer as I embraced the notion that growth as a developer requires fearlessly taking on challenging tasks and exploring uncharted territories. During this phase, I discovered the Evolution company's announcement of a global TypeScript bootcamp, which instantly captivated my interest. As part of the application process, in two weeks I successfully completed a <a href="https://possible-action.surge.sh" target="_blank" rel="noreferrer">test assignment (Hexagonal 2048)</a> and passed all jest test cases. The assignment involved developing a variant of the popular 2048 game, with the unique twist of using a hexagonal field instead of the traditional square grid. I used server requests to fetch new cells after each move. Additionally, I developed multiple levels of game, and introduced simple transition animations. For further information on the game rules and more, please refer to the <a href="https://github.com/TheLastDance/Hexagon_2048_readme" target="_blank" rel="noreferrer">readme file on GitHub</a>. Long story short, after submitting my solution, I received an exciting message from Evolution indicating that I had successfully passed the selection stage, marking the beginning of a remarkable journey.</span>,
+        date: '26.12.2022'
     }
 ]
 
