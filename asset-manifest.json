@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.5329caa8.css",
-    "main.js": "/Portfolio/static/js/main.3838259b.js",
+    "main.js": "/Portfolio/static/js/main.ed9bada9.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/project_poker.jpg": "/Portfolio/static/media/project_poker.314e436efa8f85a0fa1e.jpg",
     "static/media/certificate.png": "/Portfolio/static/media/certificate.c49813949a0ef317a560.png",
@@ -11,6 +11,7 @@
     "static/media/RussoOne.eot": "/Portfolio/static/media/RussoOne.22545ce04489264e7dcb.eot",
     "static/media/RussoOne.ttf": "/Portfolio/static/media/RussoOne.64eebaedef5db50f056d.ttf",
     "static/media/CV.pdf": "/Portfolio/static/media/CV.d8d6f423214109445c3f.pdf",
+    "static/media/grades.jpg": "/Portfolio/static/media/grades.ff20be49adc0d81dc286.jpg",
     "static/media/project_todo_2.jpg": "/Portfolio/static/media/project_todo_2.becc2366f30ac70cced1.jpg",
     "static/media/Blacksword.eot": "/Portfolio/static/media/Blacksword.5fa71a5db346c19b6eab.eot",
     "static/media/Blacksword.ttf": "/Portfolio/static/media/Blacksword.e72d19ecdddbc58c030d.ttf",
@@ -34,11 +35,11 @@
     "static/media/Babylon.js-Logo.wine.svg": "/Portfolio/static/media/Babylon.js-Logo.wine.7d4352497f6b35931ac90180db6c0637.svg",
     "index.html": "/Portfolio/index.html",
     "main.5329caa8.css.map": "/Portfolio/static/css/main.5329caa8.css.map",
-    "main.3838259b.js.map": "/Portfolio/static/js/main.3838259b.js.map",
+    "main.ed9bada9.js.map": "/Portfolio/static/js/main.ed9bada9.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5329caa8.css",
-    "static/js/main.3838259b.js"
+    "static/js/main.ed9bada9.js"
   ]
 }
