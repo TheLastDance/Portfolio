@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.4a18e0a4.css",
-    "main.js": "/Portfolio/static/js/main.91f604ad.js",
+    "main.js": "/Portfolio/static/js/main.22d416c6.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/CV.pdf": "/Portfolio/static/media/CV.0fa7bedbcf1d5c4ea5ef.pdf",
     "static/media/project_poker.jpg": "/Portfolio/static/media/project_poker.314e436efa8f85a0fa1e.jpg",
     "static/media/certificate.png": "/Portfolio/static/media/certificate.c49813949a0ef317a560.png",
     "static/media/project_food_generator_2.jpg": "/Portfolio/static/media/project_food_generator_2.673b431fae765e089fdb.jpg",
+    "static/media/CV ENG.pdf": "/Portfolio/static/media/CV ENG.fb32fbecd0f4699e08d9.pdf",
     "static/media/portfolio_photo.jpg": "/Portfolio/static/media/portfolio_photo.d762f74408fba6ec66ea.jpg",
     "static/media/project_freeTour_2.jpg": "/Portfolio/static/media/project_freeTour_2.bf3bb0079f08aea2a1a5.jpg",
     "static/media/project_cybersphere.jpg": "/Portfolio/static/media/project_cybersphere.329892763aeb968ef299.jpg",
@@ -41,11 +41,11 @@
     "static/media/Babylon.js-Logo.wine.svg": "/Portfolio/static/media/Babylon.js-Logo.wine.7d4352497f6b35931ac90180db6c0637.svg",
     "index.html": "/Portfolio/index.html",
     "main.4a18e0a4.css.map": "/Portfolio/static/css/main.4a18e0a4.css.map",
-    "main.91f604ad.js.map": "/Portfolio/static/js/main.91f604ad.js.map",
+    "main.22d416c6.js.map": "/Portfolio/static/js/main.22d416c6.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4a18e0a4.css",
-    "static/js/main.91f604ad.js"
+    "static/js/main.22d416c6.js"
   ]
 }
