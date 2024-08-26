@@ -3,7 +3,7 @@ import { useState } from "react";
 import { section } from "../animations/animation-section";
 import { timeline_data } from "../data/timeline_data";
 import Item from "./timeline_item";
-import CV from "../assets/files/CV.pdf"
+import CV from "../assets/files/CV ENG.pdf";
 
 
 
